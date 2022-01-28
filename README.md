@@ -94,11 +94,10 @@ docker run \
 
 cd /working/
 
-RM2Bed.py \
-    test_data/inputs/test_repeat_masked.fa.out \
-    --out_prefix "test"
+RM2Bed.py test_data/inputs/test_repeat_masked.fa.out
 
 ## looks good
+
 rm test_rm.bed
 exit
 ```
