@@ -21,13 +21,12 @@ docker run \
 apt-get update && apt-get install -y git \
 	&& pip install --no-cache-dir pandas
 
-## Move to opt directory & clone the RepeatMasker repo (which housed the RM2Bedb.py script)
+## Move to opt directory & clone the RepeatMasker repo (which has the RM2Bedb.py script)
 cd /opt/
 
 git clone https://github.com/rmhubley/RepeatMasker.git
 
-##
-Pin the git repo to a specific commit
+## Pin the git repo to a specific commit
 cd RepeatMasker
 git reset --hard a58f3130a4fedb7784171a539052277d2cccc690
 
@@ -149,9 +148,11 @@ cromwell \
     --inputs rm2bed.inputs.json
 ```
 
-## Update GitHub
+## Update on GitHub
 
+```
 git add -A
 git commit -m "initial commit"
 
 git push
+```
