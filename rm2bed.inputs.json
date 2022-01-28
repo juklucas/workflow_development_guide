@@ -1,0 +1,6 @@
+{
+  "rm2bed_workflow.rm2bed.output_file_tag": "out_tag",
+  "rm2bed_workflow.rm2bed.rm_out_file": "test_data/inputs/test_repeat_masked.fa.out",
+  "rm2bed_workflow.rm2bed.sample_name": "test"
+}
+
